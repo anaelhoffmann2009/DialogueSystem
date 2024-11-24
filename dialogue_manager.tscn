@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvdqqs7tsqrv3"]
+
+[ext_resource type="Script" path="res://scripts/DialogueManager.gd" id="1_si46p"]
+
+[sub_resource type="Animation" id="Animation_s34w7"]
+resource_name = "typewriting"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_g5lk6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wjofr"]
+_data = {
+"RESET": SubResource("Animation_g5lk6"),
+"typewriting": SubResource("Animation_s34w7")
+}
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="DialogueManager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_si46p")
+
+[node name="Panel" type="Panel" parent="DialogueManager"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 548.0
+offset_right = 1158.0
+offset_bottom = 655.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogueManager/Panel"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 21.0
+offset_right = 1138.0
+offset_bottom = 88.0
+bbcode_enabled = true
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Options" type="Panel" parent="DialogueManager"]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 319.0
+offset_right = 1138.0
+offset_bottom = 531.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DialogueManager/Options"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 356.0
+offset_bottom = 197.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogueManager"]
+libraries = {
+"": SubResource("AnimationLibrary_wjofr")
+}

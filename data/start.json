@@ -1,0 +1,81 @@
+
+{
+   "dialogue_1": {
+		"id": 1,
+		"text": "Aida: Hey! You're human, right?",
+		"options": {"2": "Yes, I'm human being, and you?", "3": "That's not important, but yes, I'm human being."},
+		"dest_id": 0
+   },
+   "dialogue_2": {
+		"id": 2,
+		"text": "Aida: I'm diane, we are very pacific alien race, though once we had to defend us because graylien attacks to our planet…",
+		"options": {"4": "You were at war with another alien race?", "5": "Oh, that's sound very bad, and why did they attack you?"},
+		"dest_id": 0
+	},
+	"dialogue_3": {
+		"id": 3,
+		"text": "Aida: Oh, then you're part of our ancestors, you originated us!",
+		"options": {"6": "Really?! Wow! I would never imaginated that!", "7": "Oh, interesting, and tell me what are your hobbies?"},
+		"dest_id": 0
+   },
+   "dialogue_4": {
+		"id": 4,
+		"text": "Aida: Yes, many of us died in that war, it was so terrible!",
+		"options": {"8": "I'm so sorry for you, you must have suffered a lot…", "9": "And someone of your family died in that war?"},
+		"dest_id": 0
+	},
+	"dialogue_5": {
+		"id": 5,
+		"text": "Aida: They attacked us by their ambition of natural resources and their hate for us…",
+		"options": {"13": "You don't know how sorry I am, it's a horrible feeling", "10": "Why your natural resources are so valious?"},
+		"dest_id": 0
+	},
+	"dialogue_6": {
+		"id": 6,
+		"text": "Aida: Yes, it's true! I've a question for you, what's your name?",
+		"options": {"11": "My name is Markus, and your name?"},
+		"dest_id": 11
+	},
+	"dialogue_7": {
+		"id": 7,
+		"text": "Aida: I really like to draw pictures, eat and play role playing games, and your hobbies?",
+		"options": {"12": "I like to play chess and video games, draw and hear music.", "14": "I see you have many hobbies in common with me, because I like to draw too!"},
+		"dest_id": 0
+	},
+	"dialogue_8": {
+		"id": 8,
+		"text": "Aida: Oh, yes, I suffered a lot… My father died there, when he was fighting against some graylien soldiers… Do you wanna go to my home now?",
+		"options": {"15": "Yes", "16": "I'll go there later"},
+		"dest_id": 0
+	},
+	"dialogue_9": {
+		"id": 9,
+		"text": "Aida: Yes, my father died there, when he was fighting against some graylien soldiers.",
+		"options": {"17": "Well, do you wanna talk about another issue?", "13": "I'm so sorry, really I have too sadness for what you lived through"},
+		"dest_id": 0
+	},
+	"dialogue_10": {
+		"id": 10,
+		"text": "Aida: They're very valious because they can be sold for a lot of money.",
+		"options": {"18": "Wow! It's interesting, though for nothing in the world would I do what they did.", "19": "Well, that's very interesting but do you wanna something to eat or aren't you hungry?"},
+		"dest_id": 0
+	},
+	"dialogue_11": {
+		"id": 11,
+		"text": "Aida: Oh, your name is very beautiful, just in case, my name is Aida.",
+		"options": {"20": "I love your name! It's beautiful!", "21": "I had never heard that name, but it's very nice!"},
+		"dest_id": 0
+	},
+	"dialogue_12": {
+		"id": 12,
+		"text": "Aida: Oh, I really like same that, but I don't know chess, what is it?",
+		"options": {"23": "Chess is a board and strategy game created by humans, in which your goal is to checkmate your opponent.", "24": "Oh, it's a long issue, it would be better to talk about it later."},
+		"dest_id": 0
+	},
+	"dialogue_13": {
+		"id": 13,
+		"text": "Aida: Don't worry, maybe I'm overcome it...",
+		"options": {"25": "I'm happy for you, it's good that you were able to overcome that"},
+		"dest_id": 0
+	}
+}
